@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>table</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+
+	<style>
+		form{
+			margin:10px;
+		}
+		.outer{
+			text-align: center;
+			display: inline-block;
+			padding:70px;
+			border:6px solid black;
+		}
+		.customer{
+			margin-left:50px;
+			margin-right: 50px;
+			font-size:25px;
+		}
+		.text{
+			float:left;
+			margin-left: 5px;
+		}
+		.round{
+			border-radius:50%;
+			background-color: rgba(220,234,239,255);
+			width:20px;
+			height:20px;
+			display: inline-block;
+			text-align: center;
+		}
+		.selected{
+			background-color: rgb(37, 150, 190);
+		}
+		.box{
+			padding:1.5px;
+			border-radius:20%;
+			background-color: rgba(220,234,239,255);
+			border: 1px solid transparent;
+			display: inline;
+			text-align: center;
+		}
+		nav{
+			text-align: right;
+			margin-right:19px;
+		}
+		table,tr,th,td{
+			margin:15px;
+			padding:5px;
+			padding-right:20px;
+			border:1px solid rgba(0, 0, 0, .1);
+			text-align: left;
+			border-collapse: collapse;
+		}.fa-eye{
+			color:rgb(37, 150, 190);
+		}.fa-pencil{
+			color:orange;
+		}
+		.fa-trash{
+			color:orangered;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<form>
+			<label>Show </label><select name="entry">
+				<option vlaue="1">1</option>
+				<option vlaue="2">2</option>
+				<option vlaue="3">3</option>
+				<option vlaue="4">4</option>
+				<option vlaue="5" selected>5</option>
+			</select> entries
+			<span class="customer">Customer <b>Details</b></span>
+			<input type="text" placeholder="search">
+		</form>
+		<br>
+		<table 
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+				<th>Address</th>
+				<th>City</th>
+				<th>Pincode</th>
+				<th>Country</th>
+				<th>Actions</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Thomas Hardy</td>
+				<td>89 Chiarsco Rd.</td>
+				<td>Portland</td>
+				<td>91219</td>
+				<td>USA</td>
+				<td>
+					<i class="fa fa-eye"></i>
+					<i class="fa fa-pencil"></i>
+					<i class="fa fa-trash"></i>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Maria Anders</td>
+				<td>Obere Str.57</td>
+				<td>Berlin</td>
+				<td>12209</td>
+				<td>Germany</td>
+				<td>
+					<i class="fa fa-eye"></i>
+					<i class="fa fa-pencil"></i>
+					<i class="fa fa-trash"></i>
+				</td>
+			</tr>
+				<tr>
+				<td>3</td>
+				<td>Maria Anders</td>
+				<td>Obere Str.57</td>
+				<td>Berlin</td>
+				<td>12209</td>
+				<td>Germany</td>
+				<td>
+					<i class="fa fa-eye"></i>
+					<i class="fa fa-pencil"></i>
+					<i class="fa fa-trash"></i>
+				</td>
+			</tr>
+				<tr>
+				<td>4</td>
+				<td>Maria Anders</td>
+				<td>Obere Str.57</td>
+				<td>Berlin</td>
+				<td>12209</td>
+				<td>Germany</td>
+				<td>
+					<i class="fa fa-eye"></i>
+					<i class="fa fa-pencil"></i>
+					<i class="fa fa-trash"></i>
+				</td>
+			</tr>
+				<tr>
+				<td>5</td>
+				<td>Maria Anders</td>
+				<td>Obere Str.57</td>
+				<td>Berlin</td>
+				<td>12209</td>
+				<td>Germany</td>
+				<td>
+					<i class="fa fa-eye"></i>
+					<i class="fa fa-pencil"></i>
+					<i class="fa fa-trash"></i>
+				</td>
+			</tr>
+		</table>
+		<span class="text">Showing <b>5</b> out of <b>25</b> entries</span>
+		<nav>
+			<a class="box">Previous</a>
+			<a class=" round">1</a>
+			<a class=" round">2</a>
+			<a class=" round selected">3</a>
+			<a class=" round">4</a>
+			<a class=" round">5</a>
+			<a class="box">Next</a>
+		</nav>
+	</div>
+</body>
+</html>

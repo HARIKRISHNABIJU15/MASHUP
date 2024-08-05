@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		html,body{
+			background-color:rgb(60,60,80) ;
+			width: 100%;
+			height:100%;
+		}
+		.outer{
+			width: 80%;
+			height:90%;
+			margin: 20px auto;
+
+		}
+		.top-bar{
+			background-color: white;
+			width: 100%;
+			height:6%;
+			border-top-left-radius:5px;
+			border-top-right-radius:5px;
+		}
+		.content{
+			width: 100%;
+			height: 100%;
+			
+		}
+		.left-box{
+			position:relative;
+			background-color: #181c24;
+			height: 100%;
+			width:60%;
+			float:left;
+			border-bottom-left-radius:5px;
+			font-family: system-ui;
+		}
+		.right-box{
+			background-color: #08ac74;
+			height: 100%;
+			width:40%;
+			float:left;
+			border-bottom-right-radius:5px;
+			position: relative;
+		}
+		.round{
+			height: 1.6vh;
+			width:.8vw;
+			padding: 50% o;
+			display:inline-block;
+			border-radius: 50%;
+			background-color: black;
+			margin: 12px 5px;
+			margin-top:10;
+			position: relative;
+			top:10%;
+		}
+		.one{
+			background-color: red;
+		}
+		.two
+		{
+			background-color: yellow;
+		}
+		.three{
+			background-color: lightgreen;
+		}
+		img{
+			display:block;
+			width:120px;
+			margin:50px;
+		}
+		.main-heading{
+			margin-left:50px;
+			margin-bottom:10px;
+			color: white;
+			font-weight:normal;
+		}
+		h2,p{
+			margin-bottom:30px;
+			font-family:system-ui;
+			margin-left:50px;
+			margin-right:50px;
+			color:grey;
+			font-weight:normal;
+			
+		}
+		.button{
+			margin-left:50px;
+			background-color: #08ac74;
+			color:white;
+			font-family:system-ui;
+			padding:5px 15px;
+			font-weight: bold;
+		}
+		.log{
+			font-weight: bold;
+			border:none;
+			color: #08ac74;
+			background-color:white;
+			font-family:system-ui;
+			padding:5px 15px;
+		}
+		nav{
+			margin-left:50px;
+			position: absolute;
+			bottom:30px;
+		}
+		span{
+			margin-left:50px;
+			color:grey;
+			font-family:system-ui;
+			font-size:10px ;
+		}
+		select{
+			background-color: #181c24;
+			font-family:system-ui;
+			font-size:10px ;
+			color:grey;
+			border:none;
+		}
+		select:focus{
+			outline:none;
+		}
+		.login{
+			color:white;
+			margin-left: 15%;
+			position: absolute;
+			font-family:system-ui;
+			top:22%;
+		}
+		form div{
+			font-family:system-ui;
+			font-size:10px ;
+			color:grey;
+			border:none;
+			position: absolute;
+			top:34%;
+			margin-left:15%;
+			width: 100%;
+		}
+		.inp{
+			color:white;
+			width:75%;
+			height:25px;
+			margin-bottom:20px;
+			background-color: #08ac74;
+			border: none;
+			border-bottom: 1px solid white;
+		}
+		  input:focus{
+		  	outline: none;
+   		 }
+		input::placeholder{
+			font-family:system-ui;
+			font-size:10px ;
+			color:white;
+		}
+		.forgot{
+			font-family:system-ui;
+			font-size:10px ;
+			color:white;
+			background-color: #08ac74;
+			border:none;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="top-bar">
+			<div class="round one"></div>
+			<div class="round two"></div>
+			<div class="round three"></div>
+		</div>
+		<div class="content">
+			<div class="left-box">
+				<img src="https://cosy.erc.edu/assets/my-erc/img/logo-white.png">
+				<h1 class="main-heading">Welcome</h1>
+				<h2>Register for anc ERC account here.</h2>
+				<p>Register for a free ERC account here and get access to the webshop, academy and membership portal. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod lpa qui officia deserunt mollit anim id est laborum.</p>
+				<form>
+				<input class="button" type="button" value="REGISTER HERE">
+				</form>
+				<nav>
+					<select>
+						<option selected>CHOOSE LANGUAGE</option>
+					</select>
+					<span>HELP CENTER</span>
+					<span>ERC WEBSITE</span>
+					<span>ERC WEBSHOP</span>
+				</nav>
+		</div>
+		<div class="right-box">
+			<h2 class="login">Or login to your account</h2>
+			<form class="right-form">
+				<div>
+				<input class="inp" type="email" placeholder="Your email"><br>
+				<input class="inp" type="password" placeholder="Password">
+				<br>
+				<input class="log" type="button" value="LOGIN">
+				<input class="forgot" type="button" value="forgot password?">
+			</div>
+		</form>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
